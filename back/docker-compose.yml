@@ -1,7 +1,7 @@
 version: "3.5"
 
 services:
-  cli:
+  lgs_cli:
     build:
       context: .
       target: cli_php
@@ -22,10 +22,9 @@ services:
       - ./composer.lock:/var/www/composer.lock
       - ./symfony.lock:/var/www/symfony.lock
       - ./migrations:/var/www/migrations
-      - ./packages:/var/www/packages
       - ./templates:/var/www/templates
       - ./fixtures:/var/www/fixtures
-  php:
+  lgs_php:
     build:
       context: .
       target: symfony_php
@@ -39,7 +38,7 @@ services:
       retries: 3
       start_period: 30s
     depends_on:
-      - db2
+      - lgs_db2
     environment:
       APP_ENV: dev
     volumes:
@@ -53,15 +52,12 @@ services:
       - ./composer.lock:/var/www/composer.lock
       - ./symfony.lock:/var/www/symfony.lock
       - ./migrations:/var/www/migrations
-      - ./packages:/var/www/packages
       - ./templates:/var/www/templates
       - ./fixtures:/var/www/fixtures
       - .docker/php/conf.d/symfony.dev.ini:/usr/local/etc/php/conf.d/symfony.ini
       - .docker/php/php-fpm.d/zz-custom.dev.conf:/usr/local/etc/php-fpm.d/zz-custom.conf
-    extra_hosts:
-      - api.logismall.lan:127.0.0.1
       
-  api:
+  lgs_api:
     build:
         context: .
         target: symfony_nginx
@@ -70,7 +66,7 @@ services:
           WWW_DATA_GID: 1000 # current user GID (> id -g). On Linux: 1000
     restart: unless-stopped
     depends_on:
-      - php
+      - lgs_php
     environment:
       SERVER_NAME: api.logismall.lan
       SERVER_NAME_REGEX: api\.logismall\.lan
@@ -80,7 +76,7 @@ services:
       - .docker/nginx/templates/dev.conf.template:/etc/nginx/templates/default.conf.template:ro
       - .docker/nginx/rules/rules.dev.conf:/etc/nginx/rules.conf:ro
 
-  db2:
+  lgs_db2:
     image: postgres:12
     volumes:
       - pg_stack_lgs_data:/var/lib/postgresql/data:rw
