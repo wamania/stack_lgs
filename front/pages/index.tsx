@@ -1,9 +1,17 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import { useSuppliersQuery } from '~/src/generated/graphql';
+import withApollo from '~/src/lib/withApollo';
 import styles from '../styles/Home.module.css'
 
-export default function Home() {
-  return (
+function Home() {
+
+  const { data, loading, error } = useSuppliersQuery({
+    variables: {
+    },
+  })
+
+  return <>
     <div className={styles.container}>
       <Head>
         <title>Create Next App</title>
@@ -20,6 +28,38 @@ export default function Home() {
           Get started by editing{' '}
           <code className={styles.code}>pages/index.js</code>
         </p>
+
+        <div>
+          <h3>Smallable</h3>
+
+          <div>
+            {data?.suppliers.map((supplier) => {
+              <>
+                <h4>
+                  {supplier.name}
+                </h4>
+                <div>
+                  <ul>
+                    {supplier.products.map((product) => {
+                      <li>
+                        <div>
+                          {product.name}
+                        </div>
+                        <ul>
+                          {product.variants.map((variant) => {
+                            <li>{variant.sku} - {variant.price}</li>
+                          })}
+                        </ul>
+                      </li>
+                    })}
+                  </ul>
+                </div>
+              </>
+            })}
+          </div>
+        </div>
+
+
 
         <div className={styles.grid}>
           <a href="https://nextjs.org/docs" className={styles.card}>
@@ -65,5 +105,7 @@ export default function Home() {
         </a>
       </footer>
     </div>
-  )
+  </>
 }
+
+export default withApollo(Home);

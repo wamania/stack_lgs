@@ -1,5 +1,5 @@
 overwrite: true
-schema: localhost:10100
+schema: http://192.168.1.33:10100/graphql
 documents: "./src/connectors/*.ts"
 generates:
   src/generated/graphql.ts:
