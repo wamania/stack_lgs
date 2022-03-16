@@ -1,0 +1,96 @@
+version: "3.5"
+
+services:
+  cli:
+    build:
+      context: .
+      target: cli_php
+      args:
+        WWW_DATA_UID: 1000 # current user UID (> id -u). On Linux: 1000
+        WWW_DATA_GID: 1000 # current user GID (> id -g). On Linux: 1000
+    working_dir: /var/www
+    environment:
+      APP_ENV: dev
+    volumes:
+      - ./bin:/var/www/bin
+      - ./config:/var/www/config
+      - ./public:/var/www/public
+      - ./src:/var/www/src
+      - ./tests:/var/www/tests
+      - ./translations:/var/www/translations
+      - ./composer.json:/var/www/composer.json
+      - ./composer.lock:/var/www/composer.lock
+      - ./symfony.lock:/var/www/symfony.lock
+      - ./migrations:/var/www/migrations
+      - ./packages:/var/www/packages
+      - ./templates:/var/www/templates
+      - ./fixtures:/var/www/fixtures
+  php:
+    build:
+      context: .
+      target: symfony_php
+      args:
+        WWW_DATA_UID: 1000 # current user UID (> id -u). On Linux: 1000
+        WWW_DATA_GID: 1000 # current user GID (> id -g). On Linux: 1000
+    restart: unless-stopped
+    healthcheck:
+      interval: 10s
+      timeout: 3s
+      retries: 3
+      start_period: 30s
+    depends_on:
+      - db2
+    environment:
+      APP_ENV: dev
+    volumes:
+      #- ./bin:/var/www/bin
+      - ./config:/var/www/config
+      - ./public:/var/www/public
+      - ./src:/var/www/src
+      - ./tests:/var/www/tests
+      - ./translations:/var/www/translations
+      - ./composer.json:/var/www/composer.json
+      - ./composer.lock:/var/www/composer.lock
+      - ./symfony.lock:/var/www/symfony.lock
+      - ./migrations:/var/www/migrations
+      - ./packages:/var/www/packages
+      - ./templates:/var/www/templates
+      - ./fixtures:/var/www/fixtures
+      - .docker/php/conf.d/symfony.dev.ini:/usr/local/etc/php/conf.d/symfony.ini
+      - .docker/php/php-fpm.d/zz-custom.dev.conf:/usr/local/etc/php-fpm.d/zz-custom.conf
+    extra_hosts:
+      - api.logismall.lan:127.0.0.1
+      
+  api:
+    build:
+        context: .
+        target: symfony_nginx
+        args:
+          WWW_DATA_UID: 1000 # current user UID (> id -u). On Linux: 1000
+          WWW_DATA_GID: 1000 # current user GID (> id -g). On Linux: 1000
+    restart: unless-stopped
+    depends_on:
+      - php
+    environment:
+      SERVER_NAME: api.logismall.lan
+      SERVER_NAME_REGEX: api\.logismall\.lan
+    ports:
+      - 10100:80
+    volumes:
+      - .docker/nginx/templates/dev.conf.template:/etc/nginx/templates/default.conf.template:ro
+      - .docker/nginx/rules/rules.dev.conf:/etc/nginx/rules.conf:ro
+
+  db2:
+    image: postgres:12
+    volumes:
+      - pg_stack_lgs_data:/var/lib/postgresql/data:rw
+    ports:
+      - 15432:5432
+    restart: always
+    environment:
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: password
+
+volumes:
+  pg_stack_lgs_data:
+    external: true

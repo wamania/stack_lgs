@@ -1,0 +1,413 @@
+App\Entity\Supplier:
+    S0: { code: S0, name: 'Supplier 0' }
+    S1: { code: S1, name: 'Supplier 1' }
+    S2: { code: S2, name: 'Supplier 2' }
+    S3: { code: S3, name: 'Supplier 3' }
+    S4: { code: S4, name: 'Supplier 4' }
+    S5: { code: S5, name: 'Supplier 5' }
+    S6: { code: S6, name: 'Supplier 6' }
+    S7: { code: S7, name: 'Supplier 7' }
+    S8: { code: S8, name: 'Supplier 8' }
+    S9: { code: S9, name: 'Supplier 9' }
+App\Entity\Product:
+    Product0: { reference: Product0, name: Basket, supplier: '@S8' }
+    Product1: { reference: Product1, name: Montre, supplier: '@S5' }
+    Product2: { reference: Product2, name: Tshirt, supplier: '@S0' }
+    Product3: { reference: Product3, name: Tshirt, supplier: '@S8' }
+    Product4: { reference: Product4, name: Basket, supplier: '@S6' }
+    Product5: { reference: Product5, name: Basket, supplier: '@S2' }
+    Product6: { reference: Product6, name: Basket, supplier: '@S7' }
+    Product7: { reference: Product7, name: Stylo, supplier: '@S6' }
+    Product8: { reference: Product8, name: Tshirt, supplier: '@S2' }
+    Product9: { reference: Product9, name: Montre, supplier: '@S7' }
+    Product10: { reference: Product10, name: Basket, supplier: '@S5' }
+    Product11: { reference: Product11, name: Basket, supplier: '@S4' }
+    Product12: { reference: Product12, name: Stylo, supplier: '@S1' }
+    Product13: { reference: Product13, name: Basket, supplier: '@S1' }
+    Product14: { reference: Product14, name: Montre, supplier: '@S2' }
+    Product15: { reference: Product15, name: Basket, supplier: '@S2' }
+    Product16: { reference: Product16, name: Stylo, supplier: '@S8' }
+    Product17: { reference: Product17, name: Montre, supplier: '@S1' }
+    Product18: { reference: Product18, name: Montre, supplier: '@S9' }
+    Product19: { reference: Product19, name: Basket, supplier: '@S5' }
+    Product20: { reference: Product20, name: Stylo, supplier: '@S5' }
+    Product21: { reference: Product21, name: Tshirt, supplier: '@S0' }
+    Product22: { reference: Product22, name: Montre, supplier: '@S5' }
+    Product23: { reference: Product23, name: Tshirt, supplier: '@S1' }
+    Product24: { reference: Product24, name: Basket, supplier: '@S2' }
+    Product25: { reference: Product25, name: Stylo, supplier: '@S1' }
+    Product26: { reference: Product26, name: Tshirt, supplier: '@S7' }
+    Product27: { reference: Product27, name: Montre, supplier: '@S7' }
+    Product28: { reference: Product28, name: Montre, supplier: '@S9' }
+    Product29: { reference: Product29, name: Montre, supplier: '@S3' }
+    Product30: { reference: Product30, name: Basket, supplier: '@S5' }
+    Product31: { reference: Product31, name: Tshirt, supplier: '@S3' }
+    Product32: { reference: Product32, name: Stylo, supplier: '@S8' }
+    Product33: { reference: Product33, name: Basket, supplier: '@S7' }
+    Product34: { reference: Product34, name: Basket, supplier: '@S9' }
+    Product35: { reference: Product35, name: Basket, supplier: '@S5' }
+    Product36: { reference: Product36, name: Stylo, supplier: '@S2' }
+    Product37: { reference: Product37, name: Stylo, supplier: '@S9' }
+    Product38: { reference: Product38, name: Tshirt, supplier: '@S7' }
+    Product39: { reference: Product39, name: Basket, supplier: '@S2' }
+    Product40: { reference: Product40, name: Basket, supplier: '@S8' }
+    Product41: { reference: Product41, name: Tshirt, supplier: '@S6' }
+    Product42: { reference: Product42, name: Stylo, supplier: '@S7' }
+    Product43: { reference: Product43, name: Tshirt, supplier: '@S1' }
+    Product44: { reference: Product44, name: Stylo, supplier: '@S5' }
+    Product45: { reference: Product45, name: Montre, supplier: '@S8' }
+    Product46: { reference: Product46, name: Basket, supplier: '@S1' }
+    Product47: { reference: Product47, name: Tshirt, supplier: '@S2' }
+    Product48: { reference: Product48, name: Basket, supplier: '@S9' }
+    Product49: { reference: Product49, name: Tshirt, supplier: '@S6' }
+    Product50: { reference: Product50, name: Stylo, supplier: '@S6' }
+    Product51: { reference: Product51, name: Tshirt, supplier: '@S2' }
+    Product52: { reference: Product52, name: Tshirt, supplier: '@S1' }
+    Product53: { reference: Product53, name: Montre, supplier: '@S7' }
+    Product54: { reference: Product54, name: Basket, supplier: '@S2' }
+    Product55: { reference: Product55, name: Tshirt, supplier: '@S6' }
+    Product56: { reference: Product56, name: Tshirt, supplier: '@S7' }
+    Product57: { reference: Product57, name: Tshirt, supplier: '@S7' }
+    Product58: { reference: Product58, name: Montre, supplier: '@S8' }
+    Product59: { reference: Product59, name: Montre, supplier: '@S9' }
+    Product60: { reference: Product60, name: Basket, supplier: '@S4' }
+    Product61: { reference: Product61, name: Stylo, supplier: '@S9' }
+    Product62: { reference: Product62, name: Stylo, supplier: '@S5' }
+    Product63: { reference: Product63, name: Montre, supplier: '@S1' }
+    Product64: { reference: Product64, name: Stylo, supplier: '@S0' }
+    Product65: { reference: Product65, name: Montre, supplier: '@S7' }
+    Product66: { reference: Product66, name: Montre, supplier: '@S3' }
+    Product67: { reference: Product67, name: Basket, supplier: '@S5' }
+    Product68: { reference: Product68, name: Tshirt, supplier: '@S0' }
+    Product69: { reference: Product69, name: Stylo, supplier: '@S4' }
+    Product70: { reference: Product70, name: Tshirt, supplier: '@S1' }
+    Product71: { reference: Product71, name: Tshirt, supplier: '@S5' }
+    Product72: { reference: Product72, name: Tshirt, supplier: '@S1' }
+    Product73: { reference: Product73, name: Montre, supplier: '@S3' }
+    Product74: { reference: Product74, name: Basket, supplier: '@S0' }
+    Product75: { reference: Product75, name: Basket, supplier: '@S6' }
+    Product76: { reference: Product76, name: Montre, supplier: '@S0' }
+    Product77: { reference: Product77, name: Tshirt, supplier: '@S7' }
+    Product78: { reference: Product78, name: Stylo, supplier: '@S5' }
+    Product79: { reference: Product79, name: Basket, supplier: '@S8' }
+    Product80: { reference: Product80, name: Montre, supplier: '@S4' }
+    Product81: { reference: Product81, name: Basket, supplier: '@S4' }
+    Product82: { reference: Product82, name: Basket, supplier: '@S7' }
+    Product83: { reference: Product83, name: Tshirt, supplier: '@S4' }
+    Product84: { reference: Product84, name: Stylo, supplier: '@S1' }
+    Product85: { reference: Product85, name: Stylo, supplier: '@S2' }
+    Product86: { reference: Product86, name: Stylo, supplier: '@S3' }
+    Product87: { reference: Product87, name: Basket, supplier: '@S9' }
+    Product88: { reference: Product88, name: Stylo, supplier: '@S3' }
+    Product89: { reference: Product89, name: Stylo, supplier: '@S5' }
+    Product90: { reference: Product90, name: Montre, supplier: '@S8' }
+    Product91: { reference: Product91, name: Tshirt, supplier: '@S0' }
+    Product92: { reference: Product92, name: Montre, supplier: '@S3' }
+    Product93: { reference: Product93, name: Tshirt, supplier: '@S9' }
+    Product94: { reference: Product94, name: Basket, supplier: '@S7' }
+    Product95: { reference: Product95, name: Basket, supplier: '@S9' }
+    Product96: { reference: Product96, name: Montre, supplier: '@S7' }
+    Product97: { reference: Product97, name: Basket, supplier: '@S2' }
+    Product98: { reference: Product98, name: Stylo, supplier: '@S5' }
+    Product99: { reference: Product99, name: Tshirt, supplier: '@S4' }
+App\Entity\Variant:
+    AAA4187350: { sku: AAA4187350, color: pruple, price: 61.22, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product14' }
+    AAA4187351: { sku: AAA4187351, color: black, price: 6.85, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product49' }
+    AAA4187352: { sku: AAA4187352, color: white, price: 69.26, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product5' }
+    AAA4187353: { sku: AAA4187353, color: yellow, price: 44.08, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product33' }
+    AAA4187354: { sku: AAA4187354, color: red, price: 33.52, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product5' }
+    AAA4187355: { sku: AAA4187355, color: black, price: 12.33, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product54' }
+    AAA4187356: { sku: AAA4187356, color: pruple, price: 13.62, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product29' }
+    AAA4187357: { sku: AAA4187357, color: white, price: 31.07, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product32' }
+    AAA4187358: { sku: AAA4187358, color: yellow, price: 84.88, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product2' }
+    AAA4187359: { sku: AAA4187359, color: pruple, price: 52.32, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product63' }
+    AAA41873510: { sku: AAA41873510, color: black, price: 19.63, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product50' }
+    AAA41873511: { sku: AAA41873511, color: red, price: 89.7, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product14' }
+    AAA41873512: { sku: AAA41873512, color: blue, price: 38.27, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product4' }
+    AAA41873513: { sku: AAA41873513, color: red, price: 87.96, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product80' }
+    AAA41873514: { sku: AAA41873514, color: yellow, price: 26.82, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product78' }
+    AAA41873515: { sku: AAA41873515, color: red, price: 98.34, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product42' }
+    AAA41873516: { sku: AAA41873516, color: red, price: 24.93, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product85' }
+    AAA41873517: { sku: AAA41873517, color: red, price: 13.04, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product17' }
+    AAA41873518: { sku: AAA41873518, color: red, price: 3.66, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product94' }
+    AAA41873519: { sku: AAA41873519, color: white, price: 10.49, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product78' }
+    AAA41873520: { sku: AAA41873520, color: white, price: 86.05, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product21' }
+    AAA41873521: { sku: AAA41873521, color: yellow, price: 23.86, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product25' }
+    AAA41873522: { sku: AAA41873522, color: black, price: 17.89, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product48' }
+    AAA41873523: { sku: AAA41873523, color: blue, price: 85.54, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product25' }
+    AAA41873524: { sku: AAA41873524, color: black, price: 62.35, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product78' }
+    AAA41873525: { sku: AAA41873525, color: white, price: 99.51, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product99' }
+    AAA41873526: { sku: AAA41873526, color: blue, price: 85.54, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product81' }
+    AAA41873527: { sku: AAA41873527, color: blue, price: 17.04, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product22' }
+    AAA41873528: { sku: AAA41873528, color: yellow, price: 33.06, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product20' }
+    AAA41873529: { sku: AAA41873529, color: pruple, price: 70.89, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product20' }
+    AAA41873530: { sku: AAA41873530, color: blue, price: 42.67, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product32' }
+    AAA41873531: { sku: AAA41873531, color: red, price: 71.64, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product22' }
+    AAA41873532: { sku: AAA41873532, color: yellow, price: 92.71, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product9' }
+    AAA41873533: { sku: AAA41873533, color: yellow, price: 39.63, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product13' }
+    AAA41873534: { sku: AAA41873534, color: black, price: 69.53, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product37' }
+    AAA41873535: { sku: AAA41873535, color: pruple, price: 14.99, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product94' }
+    AAA41873536: { sku: AAA41873536, color: yellow, price: 6.02, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product88' }
+    AAA41873537: { sku: AAA41873537, color: yellow, price: 79.61, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product31' }
+    AAA41873538: { sku: AAA41873538, color: pruple, price: 6.75, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product83' }
+    AAA41873539: { sku: AAA41873539, color: pruple, price: 75.88, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product19' }
+    AAA41873540: { sku: AAA41873540, color: red, price: 24.1, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product71' }
+    AAA41873541: { sku: AAA41873541, color: yellow, price: 80.06, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product35' }
+    AAA41873542: { sku: AAA41873542, color: pruple, price: 21.6, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product1' }
+    AAA41873543: { sku: AAA41873543, color: yellow, price: 84.21, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product88' }
+    AAA41873544: { sku: AAA41873544, color: red, price: 90.16, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product34' }
+    AAA41873545: { sku: AAA41873545, color: pruple, price: 20.12, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product38' }
+    AAA41873546: { sku: AAA41873546, color: blue, price: 9.15, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product73' }
+    AAA41873547: { sku: AAA41873547, color: blue, price: 56.69, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product16' }
+    AAA41873548: { sku: AAA41873548, color: black, price: 87.63, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product75' }
+    AAA41873549: { sku: AAA41873549, color: red, price: 75.22, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product69' }
+    AAA41873550: { sku: AAA41873550, color: blue, price: 67.34, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product3' }
+    AAA41873551: { sku: AAA41873551, color: black, price: 61.34, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product22' }
+    AAA41873552: { sku: AAA41873552, color: red, price: 20.44, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product83' }
+    AAA41873553: { sku: AAA41873553, color: pruple, price: 68.45, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product36' }
+    AAA41873554: { sku: AAA41873554, color: blue, price: 29.97, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product77' }
+    AAA41873555: { sku: AAA41873555, color: black, price: 7.27, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product93' }
+    AAA41873556: { sku: AAA41873556, color: pruple, price: 37.66, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product5' }
+    AAA41873557: { sku: AAA41873557, color: black, price: 73.89, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product44' }
+    AAA41873558: { sku: AAA41873558, color: blue, price: 81.99, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product35' }
+    AAA41873559: { sku: AAA41873559, color: black, price: 59.03, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product70' }
+    AAA41873560: { sku: AAA41873560, color: black, price: 4.41, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product51' }
+    AAA41873561: { sku: AAA41873561, color: pruple, price: 10.15, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product83' }
+    AAA41873562: { sku: AAA41873562, color: red, price: 19.95, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product37' }
+    AAA41873563: { sku: AAA41873563, color: yellow, price: 69.52, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product89' }
+    AAA41873564: { sku: AAA41873564, color: white, price: 64.57, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product64' }
+    AAA41873565: { sku: AAA41873565, color: red, price: 7.79, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product86' }
+    AAA41873566: { sku: AAA41873566, color: white, price: 35.0, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product14' }
+    AAA41873567: { sku: AAA41873567, color: blue, price: 1.37, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product22' }
+    AAA41873568: { sku: AAA41873568, color: white, price: 31.61, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product28' }
+    AAA41873569: { sku: AAA41873569, color: pruple, price: 5.85, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product84' }
+    AAA41873570: { sku: AAA41873570, color: blue, price: 93.05, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product47' }
+    AAA41873571: { sku: AAA41873571, color: red, price: 60.78, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product92' }
+    AAA41873572: { sku: AAA41873572, color: yellow, price: 4.14, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product9' }
+    AAA41873573: { sku: AAA41873573, color: pruple, price: 55.77, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product4' }
+    AAA41873574: { sku: AAA41873574, color: red, price: 10.64, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product76' }
+    AAA41873575: { sku: AAA41873575, color: blue, price: 88.21, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product12' }
+    AAA41873576: { sku: AAA41873576, color: pruple, price: 66.16, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product50' }
+    AAA41873577: { sku: AAA41873577, color: red, price: 13.29, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product70' }
+    AAA41873578: { sku: AAA41873578, color: black, price: 84.13, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product62' }
+    AAA41873579: { sku: AAA41873579, color: pruple, price: 81.82, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product22' }
+    AAA41873580: { sku: AAA41873580, color: red, price: 35.65, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product72' }
+    AAA41873581: { sku: AAA41873581, color: white, price: 34.83, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product31' }
+    AAA41873582: { sku: AAA41873582, color: white, price: 95.28, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product8' }
+    AAA41873583: { sku: AAA41873583, color: white, price: 85.23, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product75' }
+    AAA41873584: { sku: AAA41873584, color: black, price: 61.2, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product97' }
+    AAA41873585: { sku: AAA41873585, color: red, price: 82.89, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product34' }
+    AAA41873586: { sku: AAA41873586, color: white, price: 47.82, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product4' }
+    AAA41873587: { sku: AAA41873587, color: pruple, price: 41.14, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product17' }
+    AAA41873588: { sku: AAA41873588, color: blue, price: 12.88, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product86' }
+    AAA41873589: { sku: AAA41873589, color: blue, price: 56.84, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product52' }
+    AAA41873590: { sku: AAA41873590, color: black, price: 14.22, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product35' }
+    AAA41873591: { sku: AAA41873591, color: yellow, price: 99.26, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product73' }
+    AAA41873592: { sku: AAA41873592, color: white, price: 23.25, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product87' }
+    AAA41873593: { sku: AAA41873593, color: pruple, price: 85.17, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product96' }
+    AAA41873594: { sku: AAA41873594, color: white, price: 24.71, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product31' }
+    AAA41873595: { sku: AAA41873595, color: red, price: 95.12, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product35' }
+    AAA41873596: { sku: AAA41873596, color: white, price: 80.23, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product77' }
+    AAA41873597: { sku: AAA41873597, color: pruple, price: 45.46, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product4' }
+    AAA41873598: { sku: AAA41873598, color: white, price: 38.62, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product56' }
+    AAA41873599: { sku: AAA41873599, color: yellow, price: 38.02, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product39' }
+    AAA418735100: { sku: AAA418735100, color: yellow, price: 45.55, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product43' }
+    AAA418735101: { sku: AAA418735101, color: black, price: 94.92, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product32' }
+    AAA418735102: { sku: AAA418735102, color: red, price: 96.96, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product28' }
+    AAA418735103: { sku: AAA418735103, color: blue, price: 59.41, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product58' }
+    AAA418735104: { sku: AAA418735104, color: white, price: 58.65, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product8' }
+    AAA418735105: { sku: AAA418735105, color: white, price: 78.51, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product15' }
+    AAA418735106: { sku: AAA418735106, color: yellow, price: 53.93, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product97' }
+    AAA418735107: { sku: AAA418735107, color: white, price: 14.76, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product61' }
+    AAA418735108: { sku: AAA418735108, color: black, price: 77.95, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product30' }
+    AAA418735109: { sku: AAA418735109, color: red, price: 1.67, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product38' }
+    AAA418735110: { sku: AAA418735110, color: yellow, price: 20.94, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product73' }
+    AAA418735111: { sku: AAA418735111, color: yellow, price: 56.44, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product69' }
+    AAA418735112: { sku: AAA418735112, color: black, price: 6.6, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product51' }
+    AAA418735113: { sku: AAA418735113, color: pruple, price: 55.45, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product79' }
+    AAA418735114: { sku: AAA418735114, color: white, price: 75.86, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product73' }
+    AAA418735115: { sku: AAA418735115, color: black, price: 7.32, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product77' }
+    AAA418735116: { sku: AAA418735116, color: black, price: 82.11, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product59' }
+    AAA418735117: { sku: AAA418735117, color: yellow, price: 25.45, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product63' }
+    AAA418735118: { sku: AAA418735118, color: yellow, price: 90.38, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product52' }
+    AAA418735119: { sku: AAA418735119, color: black, price: 65.77, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product70' }
+    AAA418735120: { sku: AAA418735120, color: red, price: 81.78, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product44' }
+    AAA418735121: { sku: AAA418735121, color: black, price: 93.45, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product24' }
+    AAA418735122: { sku: AAA418735122, color: blue, price: 49.26, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product39' }
+    AAA418735123: { sku: AAA418735123, color: red, price: 86.65, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product23' }
+    AAA418735124: { sku: AAA418735124, color: pruple, price: 6.56, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product82' }
+    AAA418735125: { sku: AAA418735125, color: yellow, price: 67.26, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product25' }
+    AAA418735126: { sku: AAA418735126, color: red, price: 97.04, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product77' }
+    AAA418735127: { sku: AAA418735127, color: white, price: 9.88, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product26' }
+    AAA418735128: { sku: AAA418735128, color: blue, price: 23.18, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product46' }
+    AAA418735129: { sku: AAA418735129, color: blue, price: 6.29, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product1' }
+    AAA418735130: { sku: AAA418735130, color: white, price: 78.72, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product52' }
+    AAA418735131: { sku: AAA418735131, color: pruple, price: 14.6, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product77' }
+    AAA418735132: { sku: AAA418735132, color: black, price: 96.0, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product79' }
+    AAA418735133: { sku: AAA418735133, color: pruple, price: 70.87, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product58' }
+    AAA418735134: { sku: AAA418735134, color: pruple, price: 17.57, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product10' }
+    AAA418735135: { sku: AAA418735135, color: yellow, price: 62.8, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product20' }
+    AAA418735136: { sku: AAA418735136, color: pruple, price: 18.06, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product81' }
+    AAA418735137: { sku: AAA418735137, color: black, price: 92.0, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product65' }
+    AAA418735138: { sku: AAA418735138, color: blue, price: 68.89, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product53' }
+    AAA418735139: { sku: AAA418735139, color: white, price: 6.34, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product17' }
+    AAA418735140: { sku: AAA418735140, color: black, price: 40.86, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product11' }
+    AAA418735141: { sku: AAA418735141, color: pruple, price: 78.49, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product93' }
+    AAA418735142: { sku: AAA418735142, color: blue, price: 35.92, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product31' }
+    AAA418735143: { sku: AAA418735143, color: blue, price: 29.6, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product67' }
+    AAA418735144: { sku: AAA418735144, color: red, price: 70.63, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product17' }
+    AAA418735145: { sku: AAA418735145, color: white, price: 1.63, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product64' }
+    AAA418735146: { sku: AAA418735146, color: white, price: 87.16, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product63' }
+    AAA418735147: { sku: AAA418735147, color: red, price: 33.1, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product74' }
+    AAA418735148: { sku: AAA418735148, color: red, price: 20.03, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product90' }
+    AAA418735149: { sku: AAA418735149, color: blue, price: 4.18, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product69' }
+    AAA418735150: { sku: AAA418735150, color: blue, price: 67.53, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product27' }
+    AAA418735151: { sku: AAA418735151, color: black, price: 98.04, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product11' }
+    AAA418735152: { sku: AAA418735152, color: yellow, price: 24.64, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product93' }
+    AAA418735153: { sku: AAA418735153, color: yellow, price: 87.62, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product20' }
+    AAA418735154: { sku: AAA418735154, color: white, price: 22.2, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product96' }
+    AAA418735155: { sku: AAA418735155, color: pruple, price: 8.13, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product51' }
+    AAA418735156: { sku: AAA418735156, color: red, price: 21.39, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product37' }
+    AAA418735157: { sku: AAA418735157, color: black, price: 50.86, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product22' }
+    AAA418735158: { sku: AAA418735158, color: white, price: 86.96, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product95' }
+    AAA418735159: { sku: AAA418735159, color: black, price: 59.74, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product78' }
+    AAA418735160: { sku: AAA418735160, color: black, price: 23.77, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product72' }
+    AAA418735161: { sku: AAA418735161, color: blue, price: 63.58, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product20' }
+    AAA418735162: { sku: AAA418735162, color: black, price: 69.6, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product10' }
+    AAA418735163: { sku: AAA418735163, color: yellow, price: 51.2, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product1' }
+    AAA418735164: { sku: AAA418735164, color: white, price: 6.93, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product25' }
+    AAA418735165: { sku: AAA418735165, color: pruple, price: 24.95, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product82' }
+    AAA418735166: { sku: AAA418735166, color: red, price: 83.33, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product71' }
+    AAA418735167: { sku: AAA418735167, color: blue, price: 58.82, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product75' }
+    AAA418735168: { sku: AAA418735168, color: blue, price: 43.64, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product2' }
+    AAA418735169: { sku: AAA418735169, color: pruple, price: 51.44, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product14' }
+    AAA418735170: { sku: AAA418735170, color: white, price: 38.17, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product77' }
+    AAA418735171: { sku: AAA418735171, color: yellow, price: 49.02, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product22' }
+    AAA418735172: { sku: AAA418735172, color: black, price: 55.43, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product48' }
+    AAA418735173: { sku: AAA418735173, color: black, price: 17.18, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product22' }
+    AAA418735174: { sku: AAA418735174, color: blue, price: 40.89, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product34' }
+    AAA418735175: { sku: AAA418735175, color: pruple, price: 45.87, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product2' }
+    AAA418735176: { sku: AAA418735176, color: red, price: 64.38, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product14' }
+    AAA418735177: { sku: AAA418735177, color: white, price: 16.1, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product76' }
+    AAA418735178: { sku: AAA418735178, color: pruple, price: 69.7, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product9' }
+    AAA418735179: { sku: AAA418735179, color: blue, price: 79.9, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product14' }
+    AAA418735180: { sku: AAA418735180, color: black, price: 22.36, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product30' }
+    AAA418735181: { sku: AAA418735181, color: black, price: 75.23, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product40' }
+    AAA418735182: { sku: AAA418735182, color: yellow, price: 53.47, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product53' }
+    AAA418735183: { sku: AAA418735183, color: red, price: 67.57, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product82' }
+    AAA418735184: { sku: AAA418735184, color: blue, price: 15.56, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product20' }
+    AAA418735185: { sku: AAA418735185, color: black, price: 99.74, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product91' }
+    AAA418735186: { sku: AAA418735186, color: red, price: 44.87, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product68' }
+    AAA418735187: { sku: AAA418735187, color: pruple, price: 82.33, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product3' }
+    AAA418735188: { sku: AAA418735188, color: red, price: 64.66, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product46' }
+    AAA418735189: { sku: AAA418735189, color: blue, price: 97.68, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product85' }
+    AAA418735190: { sku: AAA418735190, color: black, price: 96.45, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product62' }
+    AAA418735191: { sku: AAA418735191, color: white, price: 74.93, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product98' }
+    AAA418735192: { sku: AAA418735192, color: black, price: 95.3, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product9' }
+    AAA418735193: { sku: AAA418735193, color: red, price: 59.06, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product81' }
+    AAA418735194: { sku: AAA418735194, color: white, price: 17.18, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product25' }
+    AAA418735195: { sku: AAA418735195, color: white, price: 33.52, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product16' }
+    AAA418735196: { sku: AAA418735196, color: black, price: 70.75, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product64' }
+    AAA418735197: { sku: AAA418735197, color: pruple, price: 9.05, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product23' }
+    AAA418735198: { sku: AAA418735198, color: red, price: 45.51, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product38' }
+    AAA418735199: { sku: AAA418735199, color: yellow, price: 10.46, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product29' }
+    AAA418735200: { sku: AAA418735200, color: black, price: 85.3, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product71' }
+    AAA418735201: { sku: AAA418735201, color: white, price: 26.85, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product91' }
+    AAA418735202: { sku: AAA418735202, color: yellow, price: 57.24, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product51' }
+    AAA418735203: { sku: AAA418735203, color: red, price: 3.58, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product75' }
+    AAA418735204: { sku: AAA418735204, color: blue, price: 41.72, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product68' }
+    AAA418735205: { sku: AAA418735205, color: blue, price: 6.85, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product70' }
+    AAA418735206: { sku: AAA418735206, color: pruple, price: 2.2, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product81' }
+    AAA418735207: { sku: AAA418735207, color: pruple, price: 99.44, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product18' }
+    AAA418735208: { sku: AAA418735208, color: red, price: 99.27, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product61' }
+    AAA418735209: { sku: AAA418735209, color: blue, price: 41.51, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product97' }
+    AAA418735210: { sku: AAA418735210, color: yellow, price: 30.39, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product37' }
+    AAA418735211: { sku: AAA418735211, color: blue, price: 57.03, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product81' }
+    AAA418735212: { sku: AAA418735212, color: white, price: 69.31, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product43' }
+    AAA418735213: { sku: AAA418735213, color: pruple, price: 92.11, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product54' }
+    AAA418735214: { sku: AAA418735214, color: white, price: 49.58, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product4' }
+    AAA418735215: { sku: AAA418735215, color: pruple, price: 92.67, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product62' }
+    AAA418735216: { sku: AAA418735216, color: pruple, price: 5.68, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product37' }
+    AAA418735217: { sku: AAA418735217, color: white, price: 60.54, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product30' }
+    AAA418735218: { sku: AAA418735218, color: black, price: 80.45, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product43' }
+    AAA418735219: { sku: AAA418735219, color: pruple, price: 95.19, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product33' }
+    AAA418735220: { sku: AAA418735220, color: white, price: 31.02, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product72' }
+    AAA418735221: { sku: AAA418735221, color: blue, price: 4.59, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product87' }
+    AAA418735222: { sku: AAA418735222, color: yellow, price: 20.92, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product96' }
+    AAA418735223: { sku: AAA418735223, color: black, price: 33.11, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product5' }
+    AAA418735224: { sku: AAA418735224, color: red, price: 43.03, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product61' }
+    AAA418735225: { sku: AAA418735225, color: red, price: 84.92, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product46' }
+    AAA418735226: { sku: AAA418735226, color: pruple, price: 37.59, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product82' }
+    AAA418735227: { sku: AAA418735227, color: pruple, price: 1.21, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product14' }
+    AAA418735228: { sku: AAA418735228, color: blue, price: 3.44, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product72' }
+    AAA418735229: { sku: AAA418735229, color: white, price: 47.02, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product49' }
+    AAA418735230: { sku: AAA418735230, color: blue, price: 46.48, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product79' }
+    AAA418735231: { sku: AAA418735231, color: black, price: 73.95, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product8' }
+    AAA418735232: { sku: AAA418735232, color: pruple, price: 35.3, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product87' }
+    AAA418735233: { sku: AAA418735233, color: black, price: 81.06, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product50' }
+    AAA418735234: { sku: AAA418735234, color: white, price: 59.39, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product39' }
+    AAA418735235: { sku: AAA418735235, color: black, price: 42.62, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product95' }
+    AAA418735236: { sku: AAA418735236, color: black, price: 19.42, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product60' }
+    AAA418735237: { sku: AAA418735237, color: red, price: 69.92, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product8' }
+    AAA418735238: { sku: AAA418735238, color: white, price: 62.29, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product76' }
+    AAA418735239: { sku: AAA418735239, color: white, price: 29.86, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product67' }
+    AAA418735240: { sku: AAA418735240, color: white, price: 43.58, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product23' }
+    AAA418735241: { sku: AAA418735241, color: blue, price: 25.71, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product28' }
+    AAA418735242: { sku: AAA418735242, color: blue, price: 53.43, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product86' }
+    AAA418735243: { sku: AAA418735243, color: white, price: 54.05, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product66' }
+    AAA418735244: { sku: AAA418735244, color: yellow, price: 66.45, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product66' }
+    AAA418735245: { sku: AAA418735245, color: red, price: 72.06, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product76' }
+    AAA418735246: { sku: AAA418735246, color: pruple, price: 38.8, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product82' }
+    AAA418735247: { sku: AAA418735247, color: red, price: 65.91, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product84' }
+    AAA418735248: { sku: AAA418735248, color: blue, price: 14.94, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product47' }
+    AAA418735249: { sku: AAA418735249, color: white, price: 47.33, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product56' }
+    AAA418735250: { sku: AAA418735250, color: white, price: 67.42, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product33' }
+    AAA418735251: { sku: AAA418735251, color: yellow, price: 60.52, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product52' }
+    AAA418735252: { sku: AAA418735252, color: yellow, price: 15.06, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product8' }
+    AAA418735253: { sku: AAA418735253, color: white, price: 44.39, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product86' }
+    AAA418735254: { sku: AAA418735254, color: pruple, price: 97.9, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product12' }
+    AAA418735255: { sku: AAA418735255, color: yellow, price: 68.76, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product5' }
+    AAA418735256: { sku: AAA418735256, color: pruple, price: 36.05, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product93' }
+    AAA418735257: { sku: AAA418735257, color: blue, price: 64.48, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product81' }
+    AAA418735258: { sku: AAA418735258, color: blue, price: 51.68, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product32' }
+    AAA418735259: { sku: AAA418735259, color: red, price: 11.81, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product30' }
+    AAA418735260: { sku: AAA418735260, color: pruple, price: 48.04, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product98' }
+    AAA418735261: { sku: AAA418735261, color: pruple, price: 68.18, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product79' }
+    AAA418735262: { sku: AAA418735262, color: pruple, price: 21.64, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product87' }
+    AAA418735263: { sku: AAA418735263, color: blue, price: 36.52, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product14' }
+    AAA418735264: { sku: AAA418735264, color: red, price: 25.23, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product65' }
+    AAA418735265: { sku: AAA418735265, color: blue, price: 38.44, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product1' }
+    AAA418735266: { sku: AAA418735266, color: blue, price: 81.32, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product72' }
+    AAA418735267: { sku: AAA418735267, color: white, price: 77.68, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product61' }
+    AAA418735268: { sku: AAA418735268, color: red, price: 67.48, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product36' }
+    AAA418735269: { sku: AAA418735269, color: pruple, price: 54.24, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product93' }
+    AAA418735270: { sku: AAA418735270, color: white, price: 37.17, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product50' }
+    AAA418735271: { sku: AAA418735271, color: black, price: 91.23, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product99' }
+    AAA418735272: { sku: AAA418735272, color: pruple, price: 37.14, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product36' }
+    AAA418735273: { sku: AAA418735273, color: pruple, price: 42.97, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product59' }
+    AAA418735274: { sku: AAA418735274, color: black, price: 72.42, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product63' }
+    AAA418735275: { sku: AAA418735275, color: black, price: 22.02, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product34' }
+    AAA418735276: { sku: AAA418735276, color: red, price: 49.07, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product42' }
+    AAA418735277: { sku: AAA418735277, color: white, price: 14.33, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product77' }
+    AAA418735278: { sku: AAA418735278, color: blue, price: 38.02, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product92' }
+    AAA418735279: { sku: AAA418735279, color: red, price: 42.36, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product33' }
+    AAA418735280: { sku: AAA418735280, color: yellow, price: 69.01, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product99' }
+    AAA418735281: { sku: AAA418735281, color: red, price: 46.15, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product13' }
+    AAA418735282: { sku: AAA418735282, color: black, price: 39.79, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product77' }
+    AAA418735283: { sku: AAA418735283, color: black, price: 93.21, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product26' }
+    AAA418735284: { sku: AAA418735284, color: blue, price: 50.68, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product80' }
+    AAA418735285: { sku: AAA418735285, color: black, price: 74.54, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product14' }
+    AAA418735286: { sku: AAA418735286, color: blue, price: 95.51, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product52' }
+    AAA418735287: { sku: AAA418735287, color: black, price: 50.14, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product89' }
+    AAA418735288: { sku: AAA418735288, color: pruple, price: 6.16, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product24' }
+    AAA418735289: { sku: AAA418735289, color: white, price: 64.12, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product98' }
+    AAA418735290: { sku: AAA418735290, color: blue, price: 76.13, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product5' }
+    AAA418735291: { sku: AAA418735291, color: pruple, price: 65.87, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product91' }
+    AAA418735292: { sku: AAA418735292, color: blue, price: 3.34, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product91' }
+    AAA418735293: { sku: AAA418735293, color: pruple, price: 17.18, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product67' }
+    AAA418735294: { sku: AAA418735294, color: blue, price: 49.26, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product14' }
+    AAA418735295: { sku: AAA418735295, color: black, price: 89.77, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product94' }
+    AAA418735296: { sku: AAA418735296, color: pruple, price: 52.66, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product46' }
+    AAA418735297: { sku: AAA418735297, color: pruple, price: 77.73, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product55' }
+    AAA418735298: { sku: AAA418735298, color: red, price: 56.03, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product6' }
+    AAA418735299: { sku: AAA418735299, color: yellow, price: 52.26, createdAt: '<(new \DateTimeImmutable("2022-03-16 09:18:55"))>', product: '@Product99' }
