@@ -11,7 +11,7 @@ use TheCodingMachine\GraphQLite\Annotations\Field;
 use TheCodingMachine\GraphQLite\Annotations\SourceField;
 use TheCodingMachine\GraphQLite\Annotations\Type;
 
-#[Type(class: Product::class, name: 'Product')]
+//#[Type(class: Product::class, name: 'Product')]
 #[SourceField(name: 'id', outputType: 'ID')]
 #[SourceField(name: 'reference')]
 #[SourceField(name: 'name')]

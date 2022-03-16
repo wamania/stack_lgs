@@ -16,9 +16,11 @@ class SupplierController
      */
     #[Query]
     public function suppliers(
+        ?string $sku,
+        ?string $reference,
         #[Autowire]
         SupplierManager $supplierManager
     ) {
-        return $supplierManager->suppliers();
+        return $supplierManager->suppliers($sku, $reference);
     }
 }

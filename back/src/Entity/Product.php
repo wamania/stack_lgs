@@ -10,6 +10,7 @@ use TheCodingMachine\GraphQLite\Annotations\Field;
 use TheCodingMachine\GraphQLite\Annotations\Type;
 
 #[ORM\Entity(repositoryClass: ProductRepository::class)]
+#[Type]
 class Product
 {
     #[ORM\Id]

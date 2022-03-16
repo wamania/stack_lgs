@@ -6,7 +6,6 @@ namespace App\Graphql\Manager;
 
 use App\Entity\Supplier;
 use Doctrine\ORM\EntityManagerInterface;
-use TheCodingMachine\GraphQLite\Annotations\Query;
 
 class SupplierManager
 {
@@ -19,9 +18,10 @@ class SupplierManager
      * @return Supplier[]
      */
     public function suppliers(
-
+        ?string $sku,
+        ?string $reference,
     ) {
         return $this->em->getRepository(Supplier::class)
-            ->findall();
+            ->list($sku, $reference);
     }
 }

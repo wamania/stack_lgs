@@ -44,4 +44,32 @@ class SupplierRepository extends ServiceEntityRepository
             $this->_em->flush();
         }
     }
+
+    /**
+     * @return Supplier[]
+     */
+    public function list(?string $sku, ?string $reference): array
+    {
+        $qb = $this->createQueryBuilder('s')
+            ->select('s');
+
+        if (null !== $sku) {
+            $qb
+                ->join('s.products', 'p')
+                ->join('p.variants', 'v')
+                ->andWhere('v.sku = :sku')
+                ->setParameter('sku', $sku);
+        }
+
+        if (null !== $reference) {
+            $qb
+                ->join('s.products', 'p')
+                ->andWhere('p.reference = :reference')
+                ->setParameter('reference', $reference);
+        }
+
+        return $qb
+            ->getQuery()
+            ->getResult();
+    }
 }
