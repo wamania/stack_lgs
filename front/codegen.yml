@@ -1,0 +1,17 @@
+overwrite: true
+schema: localhost:10100
+documents: "./src/connectors/*.ts"
+generates:
+  src/generated/graphql.ts:
+    config: 
+      withRefetchFn: true
+    reactApolloVersion: 3
+    withHooks: true
+    exportFragmentSpreadSubTypes: true
+    plugins:
+      - "typescript"
+      - "typescript-operations"
+      - "typescript-react-apollo"
+  src/generated/graphql.schema.json:
+    plugins:
+      - "introspection"
